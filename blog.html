@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Calla Home Decor</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        header {
+            background-color: #D6CC99;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo img {
+            height:auto; 
+            width:auto; /* Adjust the size as needed */
+        }
+
+        nav {
+            background-color: #D6CC99;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        /* Blog container styling */
+        .blog-container {
+            font-family: Arial, sans-serif;
+            display: flex;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px
+        }
+
+        .blog {
+            flex: 3;
+            padding-right: 20px;
+        }
+
+        .blog h2{
+            font-family: Arial, sans-serif;
+        }
+
+        .images {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Image transition effect */
+        .images img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+        }
+
+        /* Scale and shadow effect on hover */
+        .images img:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
+        }
+
+        h2 {
+            font-size: 3em;
+            text-decoration: underline;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+
+        p {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        /* Footer Styles */
+        footer {
+            font-family: Arial, sans-serif;
+            background-color:  #D6CC99;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        footer h3 {
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            margin: 5px 10px;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .footer-links a:hover {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Centered Logo -->
+        <div class="logo">
+            <!-- Replace 'logo.png' with the path to your logo image -->
+            <img src="https://calla.qodeinteractive.com/wp-content/themes/calla/assets/img/logo_white.png" alt="Website Logo">
+            <hr>
+        </div>
+    </header>
+    <nav>
+        <a href="Main Webpage.html">Home</a>
+        <a href="category.html">Products</a>
+        <a href="about_us.html">About Us</a>
+        <a href="ContactUs.html">Contact</a>
+        <hr>
+    </nav>
+    
+    <div class="blog-container">
+        <div class="blog">
+            <h2>Blog</h2>
+            <h3>Blog 1: Discover Tips for Decorating Your Home Beautifully</h3>
+            <p><b>Introduction</b></p>
+            <p>Decorating your home is an opportunity to showcase your personal style, create a space you love, and make every room feel inviting. Here, we’ll explore some simple yet effective tips that will help you decorate your home beautifully, no matter your style or budget.</p>
+            
+            <h3>1. Start with a Color Palette</h3>
+            <p>A cohesive color palette can tie your entire home together. Choose three to five colors that complement each other and use them throughout your space. Mixing neutrals with bold colors can add interest!</p>
+
+            <h3>2. Play with Texture</h3>
+            <p>Incorporating different textures, like plush rugs, woven baskets, sleek metals, and wood, adds depth and dimension, making spaces feel dynamic and inviting.</p>
+
+            <h3>3. Layer Your Lighting</h3>
+            <p>Good lighting includes ambient, task, and accent lighting to create a warm, inviting atmosphere.</p>
+
+            <h3>4. Personalize with Art and Decor</h3>
+            <p>Include art and decor that reflect your personality—family photos, artwork, or souvenirs—to make your space unique.</p>
+
+            <h3>5. Embrace Minimalism</h3>
+            <p>Focus on a few key pieces to prevent clutter and let your carefully chosen decor stand out.</p>
+
+            <h3>Conclusion</h3>
+            <p>Decorating doesn’t have to be daunting. With a few key elements like color, texture, and lighting, you can create a space that is both beautiful and comfortable.</p>
+        </div>
+
+        <div class="images">
+            <img src="https://media.designcafe.com/wp-content/uploads/2020/04/23125905/creative-home-decor-ideas.jpg" alt="blog 1 example 1"><br><br>
+            <img src="https://media.istockphoto.com/id/943910360/photo/posters-in-cozy-apartment-interior.jpg?s=612x612&w=0&k=20&c=QzNjsxCNMcFNxpn4E2ocPvSU8Ud2S3B_mHyo5L-HOLo=" alt="blog 1 example 2"><br><br>
+            <img src="https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?cs=srgb&dl=pexels-fotios-photos-1090638.jpg&fm=jpg" alt="blog 1 example 3"><br><br>
+        </div>
+    </div>
+
+    <div class="blog-container">
+        <div class="blog">
+            <h3> Blog 2: Learn How to Choose the Perfect Decor for Any Room</h3>
+            <h3><b>Introduction</b></h3>
+            <p>Choosing the right decor for a room can be a tricky task. You want to create a space that’s stylish, yet functional and true to your taste. Whether you’re decorating a cozy living room, a serene bedroom, or a functional kitchen, here’s a guide to help you select the perfect decor for any space.</p>
+            
+            <h3>1. Consider the Room’s Function  </h3>
+            <p>Before selecting decor, think about the function of the room. For example, in a living room, you may want cozy throws and decorative pillows to create a welcoming atmosphere. In a home office, opt for practical decor like a stylish desk lamp and wall art that inspires you. Let the purpose of the room guide your choices.</p>
+
+            <h3>2. Focus on a Statement Piece</h3>
+            <p>Every room needs a focal point—a piece that catches the eye and sets the tone. This could be a beautiful piece of artwork, a bold area rug, or a unique piece of furniture. Once you have your statement piece, build the rest of the room’s decor around it, ensuring everything complements the focal point without overwhelming it.</p>
+
+            <h3>3. Scale is Key  </h3>
+            <p>When choosing decor, consider the scale of each piece in relation to the size of the room. A large sofa may overwhelm a small living room, while tiny wall art might get lost on a large, open wall. Measure your space and the items you’re considering to ensure that they fit well and balance the room.</p>
+
+            <h3>4. Don’t Forget About Textiles  </h3>
+            <p>Textiles like curtains, rugs, and pillows can bring warmth and comfort to any space. Choose fabrics that match your room’s color scheme and style. A soft rug can make a room feel more inviting, while elegant drapes can add a touch of sophistication.</p>
+
+            <h3>5. Add Greenery for Life  </h3>
+            <p>Plants are a great way to breathe life into any room. Whether it’s a tall indoor plant in the corner of your living room or small succulents on a windowsill, greenery can add color and a sense of calm. Plus, they help to purify the air!</p>
+
+            <h3>Conclusion</h3>
+            <p>Choosing the perfect decor for any room is all about understanding the space and what you want it to feel like. Focus on function, scale, and a few standout pieces, and don’t forget to add personal touches to make the space truly yours. Happy decorating!</p>
+        </div>
+
+        <div class="images">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/edc050124lavonne-extras-004-662810f9ae321.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="blog 2 example 1"><br><br>
+            <img src="https://www.thespruce.com/thmb/vf_MEDifLRzzmQNjMyUDR1FGA14=/3000x0/filters:no_upscale():max_bytes(150000):strip_icc()/tips-for-decorating-a-beautiful-bedroom-1976169-hero-e960fbb8311c4b9b875a1813962d34eb.jpg" alt="blog 2 example 2"><br><br>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/living-room-2-left-663155189da31.jpg?crop=0.750xw:1.00xh;0,0&resize=980:*" alt="blog 2 example 3"><br><br>
+        </div>
+    </div>
+
+    <div class="blog-container">
+        <div class="blog">
+            <h3> Blog 3: Explore the Latest Trends in Home Decoration</h3>
+            <h3><b>Introduction</b></h3>
+            <p>Home decor trends are constantly evolving, offering fresh ideas to keep your space looking stylish and up-to-date. Whether you’re looking for a full home makeover or just a few seasonal updates, here are some of the latest trends in home decoration that you’ll love.</p>
+            
+            <h3>1. Earthy Tones and Natural Materials  </h3>
+            <p>Nature-inspired decor is still a major trend, with earthy tones like terracotta, olive green, and warm browns leading the way. Natural materials such as rattan, wicker, and reclaimed wood add warmth and texture to spaces. These elements create a calming, grounded feel, making your home a cozy retreat.</p>
+
+            <h3>2. Bold Accent Walls  </h3>
+            <p>While minimalism is still popular, bold accent walls are making a comeback. Whether you choose a deep paint color, a statement wallpaper, or a textured finish like limewash, an accent wall can add drama and depth to any room. This trend is perfect for adding personality to spaces like bedrooms or living rooms.</p>
+
+            <h3>3. Maximalist Decor  </h3>
+            <p>On the opposite end of the spectrum, maximalism is thriving. This trend is all about embracing bold colors, layered textures, and curated collections of decor. Think eclectic gallery walls, vibrant textiles, and a mix of vintage and modern pieces. If you love the idea of a home filled with personality and unique finds, this trend might be for you.</p>
+
+            <h3>4. Sustainable and Upcycled Decor  </h3>
+            <p>Eco-conscious decor is becoming increasingly popular, with a focus on sustainable materials and upcycled pieces. Thrifted furniture, repurposed decor items, and eco-friendly materials are being used to create beautiful, planet-friendly spaces. This trend encourages creativity and is perfect for those who love DIY projects.</p>
+
+            <h3>5. Smart Home Integration  </h3>
+            <p>Technology is becoming a bigger part of home decor, with smart home integration offering convenience and efficiency. From smart lighting that adjusts with the time of day to sleek, minimal smart speakers, these tech-forward features can enhance your home’s functionality while maintaining a chic aesthetic.</p>
+
+            <h3>Conclusion</h3>
+            <p>The latest trends in home decoration are all about balance—finding the right mix of comfort, style, and functionality. Whether you’re drawn to earthy tones, bold accents, or a touch of tech, there’s a trend out there to inspire your next home update. Embrace what resonates with your style, and make your home a true reflection of you!</p>
+        </div>
+
+        <div class="images">
+            <img src="https://app.dropinblog.com/uploaded/blogs/34246798/files/Celebrating_Nature__10_Ideas_To_Get_A_Nature_-_Inspired_Home_Design.jpg" alt="blog 3 example 1"><br><br>
+            <img src="https://cms.interiorcompany.com/wp-content/uploads/2024/04/contemporary-wallpapers-accent-wall.jpg" alt="blog 3 example 2"><br><br>
+            <img src="https://www1.lovethatdesign.com/wp-content/uploads/2024/08/Love-That-Design-Maximalist-Design-Annabels-Loos-in-the-Mews-1024x768-1.jpeg" alt="blog 3 example 3"><br><br>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Quick Links</h3>
+        <div class="footer-links">
+            <a href="about_us.html">About Us</a>
+            <a href="ContactUs.html">What We Do</a>
+            <a href="ContactUs.html">FAQ Page</a>
+            <a href="ContactUs.html">Find our Store</a>
+        </div>
+    </footer>
+</body>
+</html>

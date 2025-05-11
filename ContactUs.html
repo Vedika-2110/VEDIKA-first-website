@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Calla Home Decor</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center align all content */
+        }
+
+        header {
+            background-color: #D6CC99;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .logo img {
+            height:auto; 
+            width:auto; /* Adjust the size as needed */
+        }
+
+        nav {
+            background-color: #D6CC99;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            margin-top: 10px; /* Reduced space for better balance */
+        }
+
+        .contact-info {
+            flex: 1; /* Allow equal space */
+            margin-right: 20px; /* Space between columns */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Equal height */
+        }
+
+        .faq {
+            width: 300px; /* Set a specific width for the FAQ section */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Equal height */
+            min-height: 500px; /* Set a fixed height */
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        p {
+            max-width: 800px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #34495e;
+        }
+
+        /* Footer Styles */
+        footer {
+            font-family: Arial, sans-serif;
+            background-color:#D6CC99;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+            margin-top: 40px;
+            width: 100%;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            margin: 5px;
+            padding: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://calla.qodeinteractive.com/wp-content/themes/calla/assets/img/logo_white.png" alt="Website Logo">
+            <hr>
+        </div>
+    </header>
+
+    <nav>
+        <a href="Main Webpage.html">Home</a>
+        <a href="category.html">Products</a>
+        <a href="about_us.html">About Us</a>
+        <a href="ContactUs.html">Contact</a>
+        <hr>
+    </nav>
+
+    <div class="container">
+        <div class="contact-info">
+            <h1>Contact Us</h1>
+            <p>
+                At Calla, we take pride in offering exceptional customer service. Our dedicated team is always ready to assist you, ensuring a seamless and enjoyable experience. Whether you have questions, need support, or simply wish to share feedback, we are here to help. Your satisfaction is our top priority, and we go above and beyond to make sure every interaction is friendly, efficient, and tailored to your needs.
+            </p>
+
+            <h2>Contact Information</h2>
+            <p>Physical Address: <br>
+            Calla Customer Service Center<br>
+            45 Rosewood Avenue, 2nd Floor<br>
+            Green Park, New Delhi, 110016<br>
+            India</p>
+            <p>Phone: +91-98765-43210</p>
+            <p>Email: customercare_calla@gmail.com</p>
+            <h3>Business Hours:</h3>
+            <p>
+            Monday to Friday: 10:00 AM to 8:00 PM<br>
+            Saturday: 10:00 AM to 6:00 PM<br>
+            Sunday: 11:00 AM to 4:00 PM
+            </p>
+
+            <div class="form-container">
+                <h2>Message Us</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <div class="faq">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <p>1. What types of products does Calla offer?<br>
+            At Calla, we specialize in a wide range of home decor items, including furniture, wall art, decorative accessories, and textiles. Our collection is designed to elevate your living space with style and elegance.</p>
+            
+            <p>2. How can I place an order?<br>
+            To place an order, simply click the "Shop Now" button on our Webpage. You’ll be directed to our online shopping form, where you can browse our collection, select your desired items, and fill out the necessary details to complete your order.</p>
+
+            <p>3. What payment methods do you accept?<br>
+            We accept various payment methods, including credit/debit cards, net banking, and digital wallets. For your convenience, we also offer cash on delivery (COD) for select areas.</p>
+
+            <p>4. How long does delivery take?<br>
+            Delivery times vary based on your location and the availability of products. Generally, orders are processed within 2-3 business days, with delivery typically taking 5-7 business days after dispatch.</p>
+
+            <p>5. Can I return or exchange an item?<br>
+            Yes, we have a hassle-free return and exchange policy. If you’re not satisfied with your purchase, you can return it within 14 days of receiving your order for a full refund or exchange, provided the item is in its original condition.</p>
+
+            <p>6. Do you offer international shipping?<br>
+            Currently, we only ship within India. However, we are exploring options for international shipping in the future.</p>
+
+            <p>7. How can I contact customer service?<br>
+            You can reach our customer service team via email at support@calla.in or by calling us at +91-98765-43210. We are here to assist you!</p>
+
+            <p>8. Do you have a physical store?<br>
+            At this time, Calla operates solely online. However, we are working on opening a physical location soon, so stay tuned for updates!</p>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Quick Links</h3>
+        <br>
+        <div class="footer-links">
+            <a href="about_us.html">About Us</a>
+            <a href="ContactUs.html">What We Do</a>
+            <a href="ContactUs.html">FAQ Page</a>
+            <a href="ContactUs.html">Find our Store</a>
+        </div>

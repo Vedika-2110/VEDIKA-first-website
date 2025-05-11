@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calla Home Decor</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #D6CC99;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo img {
+            height: auto; 
+            width: auto; /* Adjust the size as needed */
+        }
+
+        nav {
+            background-color: #D6CC99;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .content h2 {
+            font-family: Arial, sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .photo-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .photo-card {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #eee;
+        }
+
+        .photo-card h3 {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            padding: 0 10px;
+        }
+
+        .photo-card p {
+            color: #666;
+            padding: 0 10px 15px;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Gallery Section Styles */
+        .gallery-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .gallery-section h2 {
+            font-family: Arial, sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center
+        }
+        
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto
+        }
+
+        .gallery-item {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease
+        }
+
+        .gallery-item img.hover-image {
+            opacity: 0
+        }
+
+        .gallery-item:hover img.hover-image {
+            opacity: 1
+        }
+
+        .gallery-item:hover img:not(.hover-image) {
+            opacity: 0
+        }
+
+        .blog-section h2 {
+            font-family: Arial, sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .blog-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .blog-card {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card h3 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+
+        .blog-card p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .read-more {
+            display: inline-block;
+            background-color: #FDE5D4;
+            color: #333;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .read-more:hover {
+            background-color: #ddd;
+        }
+        /* Footer Styles */
+        footer {
+            font-family: Arial, sans-serif;
+            background-color:  #D6CC99;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            margin: 5px;
+            padding: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Centered Logo -->
+        <div class="logo">
+            <!-- Replace 'logo.png' with the path to your logo image -->
+            <img src="https://calla.qodeinteractive.com/wp-content/themes/calla/assets/img/logo_white.png" alt="Website Logo">
+            <hr>
+        </div>
+    </header>
+    <nav>
+        <a href="Main Webpage.html">Home</a>
+        <a href="category.html">Products</a>
+        <a href="about_us.html">About Us</a>
+        <a href="ContactUs.html">Contact</a>
+        <hr>
+    </nav>
+    
+    <div class="content">
+        <h2>New Arrivals</h2>
+        <div class="photo-cards">
+            <!-- Photo Card 1 -->
+            <div class="photo-card">
+                <img src="https://img.freepik.com/free-photo/fluffy-cotton-plant-vase-used-interior-decor_23-2151104639.jpg" alt="New Arrival 1">
+                <h3>Fluffy Cotton Plant Vase</h3>
+                <p>Beautiful decor piece for your home.</p>
+            </div>
+            <!-- Photo Card 2 -->
+            <div class="photo-card">
+                <img src="https://img.freepik.com/free-psd/still-life-modern-vase-isolated_23-2150683306.jpg" alt="New Arrival 2">
+                <h3>Grooved Bud Vases </h3>
+                <p>Stylish and modern design.</p>
+            </div>
+            <!-- Photo Card 3 -->
+            <div class="photo-card">
+                <img src="https://img.freepik.com/free-psd/still-life-modern-vase-isolated_23-2150683303.jpg" alt="New Arrival 3">
+                <h3>White Ceramic Flower Vase</h3>
+                <p>Enhance your living space.</p>
+            </div>
+            <!-- Photo Card 4 -->
+            <div class="photo-card">
+                <img src="https://img.freepik.com/free-photo/green-plant-white-bright-decoration_1203-4886.jpg" alt="New Arrival 4">
+                <h3>Cycas Revoluta Plant Pot</h3>
+                <p>Perfect touch for any room.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <!-- Row 1: Gallery Items 1 to 4 -->
+        <div class="gallery-item">
+            <img src="https://www.yuvaflowers.com/cdn/shop/files/tied-ribbons-resin-romantic-boat-couple-showpiece-statue-for-home-decor-living-room-bedroom-decoration-items-gift-to-wife-husband-boyfriend-girlfriend-multi-colour-visit-the-tied-ribb.jpg?v=1711902330" alt="Gallery Image 1">
+            <img src="https://diybaazar.com/publicuploads/seller/products/plrk-metal-iron-ganesha-t-light-multicolour-stone-candle-holder-home-decorative-itemshome-decor-items-for-living-roompooja-room-diwali-gift-items-2551-3502-1_diybaazar63347b3fb83a7.jpg" alt="Gallery Image 1 Hover" class="hover-image">
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE4nZcI91-hj64UN3FVf2h6hDn9U_xUfGHAA&s" alt="Gallery Image 2">
+            <img src="https://m.media-amazon.com/images/I/51wriIzYwWL._AC_.jpg" alt="Gallery Image 2 Hover" class="hover-image">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.shopify.com/s/files/1/0030/9759/1872/files/today_2_480x480.png?v=1680262150" alt="Gallery Image 3">
+            <img src="https://img.joomcdn.net/1bd4ab4d5335d4c4806b8c821321c7204dd03520_original.jpeg" alt="Gallery Image 3 Hover" class="hover-image">
+        </div>
+        <div class="gallery-item">
+            <img src="https://zugunu.com/wp-content/uploads/2021/09/In-Circle-Antique-Peacock-Wall-Decor-1.jpg" alt="Gallery Image 4">
+            <img src="https://m.media-amazon.com/images/I/61M5T5LbSjL._AC_UF1000,1000_QL80_.jpg" alt="Gallery Image 4 Hover" class="hover-image">
+        </div>
+        <!-- Row 2: Gallery Items 5 to 8 -->
+        <div class="gallery-item">
+            <img src="https://m.media-amazon.com/images/I/617JFJOe8jL._AC_UF1000,1000_QL80_.jpg" alt="Gallery Image 5">
+            <img src="https://images.meesho.com/images/products/423915385/lqvt0_512.webp" alt="Gallery Image 5 Hover" class="hover-image">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.jiomart.com/images/product/original/rvh6wc3fzw/mapperz-star-led-serial-string-lights-for-home-decore-2-5-meter-copper-wire-12-stars-138-led-lights-for-birthday-festive-decore-white-product-images-orvh6wc3fzw-p605688555-0-202310212124.jpg?im=Resize=(1000,1000)" alt="Gallery Image 6">
+            <img src="https://m.media-amazon.com/images/I/619nfGytrJL._AC_UF1000,1000_QL80_.jpg" alt="Gallery Image 6 Hover" class="hover-image">
+        </div>
+        <div class="gallery-item">
+            <img src="https://area44.in/cdn/shop/products/tablelampmoon02.png?v=1604153014" alt="Gallery Image 7">
+            <img src="https://www.nerolac.com/sites/default/files/2024-09/Diwali-Home-Decoration-Ideas_H3.webp" alt="Gallery Image 7 Hover" class="hover-image">
+        </div>
+        <div class="gallery-item">
+            <img src="https://craftomanic.com/wp-content/uploads/2023/12/f698df44ead7ceb154fec0bb26ac857d-1.jpg" alt="Gallery Image 8">
+            <img src="https://www.bigsmall.in/cdn/shop/files/webp.webp?v=1698326541&width=2160" alt="Gallery Image 8 Hover" class="hover-image">
+        </div>
+    </div>
+    </div>
+
+
+    <div class="blog-section">
+        <h2>Blog</h2>
+        <div class="blog-cards">
+            <!-- Blog Card 1 -->
+            <div class="blog-card">
+                <h3>Blog 1</h3>
+                <p>Discover tips for decorating your home beautifully.</p>
+                <a class="read-more" href="blog.html">Read More</a>
+            </div>
+            <!-- Blog Card 2 -->
+            <div class="blog-card">
+                <h3>Blog 2</h3>
+                <p>Learn how to choose the perfect decor for any room.</p>
+                <a class="read-more" href="blog.html">Read More</a>
+            </div>
+            <!-- Blog Card 3 -->
+            <div class="blog-card">
+                <h3>Blog 3</h3>
+                <p>Explore the latest trends in home decoration.</p>
+                <a class="read-more" href="blog.html">Read More</a> 
+            </div>
+        </div>
+    </div><br><br>
+
+    <footer>
+        <h3>Quick Links</h3>
+        <br>
+        <div class="footer-links">
+            <a href="about_us.html">About Us</a>
+            <a href="ContactUs.html">What We Do</a>
+            <a href="ContactUs.html">FAQ Page</a>
+            <a href="ContactUs.html">Find our Store</a>
+        </div>
+    </footer>
+</body>
+</html>

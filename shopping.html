@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+<head>
+<title>Shopping Form</title>
+<style>
+    /* Basic styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+
+    header {
+        background-color: #D6CC99;
+        color: #333;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .logo img {
+        height: auto;
+        width: auto;
+    }
+
+    nav {
+        background-color: #D6CC99;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav a {
+        color: #333;
+        text-decoration: none;
+        margin: 0 15px;
+        padding: 5px 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+    }
+
+    /* Form container styling */
+    .form-container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form h2, h3, h1 {
+        color: #333;
+    }
+
+    form input[type="text"],
+    form textarea,
+    form select {
+        width: 100%;
+        padding: 8px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    form input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    /* Submit button styling */
+    .submit-button {
+        display: block;
+        width: 100px;
+        padding: 10px;
+        margin: 20px auto;
+        background-color: #D6CC99;
+        color: #333;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .submit-button:hover {
+        background-color: #c4b389;
+    }
+
+    /* Footer Styles */
+    footer {
+        font-family: Arial, sans-serif;
+        background-color:  #D6CC99;
+        padding: 20px;
+        text-align: center;
+        color: #333;
+    }
+
+    .footer-links {
+        margin-top: 10px;
+    }
+
+    .footer-links a {
+        display: inline-block;
+        color: #333;
+        text-decoration: none;
+        margin: 5px;
+        padding: 5px;
+        transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        color: #555;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <!-- Centered Logo -->
+        <div class="logo">
+            <img src="https://calla.qodeinteractive.com/wp-content/themes/calla/assets/img/logo_white.png" alt="Website Logo">
+            <hr>
+        </div>
+    </header>
+    <nav>
+        <a href="Main Webpage.html">Home</a>
+        <a href="category.html">Products</a>
+        <a href="about_us.html">About Us</a>
+        <a href="ContactUs.html">Contact</a>
+        <hr>
+    </nav>
+
+    <div class="form-container">
+        <form>
+            <marquee bgcolor="pink">Shop now and get up to 30% discount</marquee>
+            <h2>Customer Details</h2>
+            <p>Name:</p>
+            <input type="text" name="cname"><br>
+            <p>Phone No:</p>
+            <input type="text" name="pname"><br>
+            <p>Email:</p>
+            <input type="text" name="ename"><br>
+            <p>Address:</p>
+            <textarea rows="5" cols="50"></textarea><br>
+
+            <h2>OUR COLLECTIONS</h2>
+
+            <p><b>Lamp & Light</b></p>
+            <select>
+                <option>None</option>
+                <option>Flower table lamp</option>
+                <option>Floor Lamp</option>
+                <option>Wooden table lamp</option>
+                <option>Lava Lamp</option>
+                <option>Salt Lamp</option>
+                <option>Pendent Lamp</option>
+                <option>Recessed Lights</option>
+                <option>Flood Lights</option>
+                <option>LED Strips Lights</option>
+                <option>Wall Sconces</option>
+                <option>Oil Lamps</option>
+                <option>Desk Clamp Lamps</option>
+                <option>Smart Lamps</option>
+                <option>Spotlights</option>
+                <option>String Lights</option>
+            </select>
+
+            <p><b>Vase & Pots</b></p>
+            <select>
+                <option>None</option>
+                <option>Floral pattern vase</option>
+                <option>Ceramic vase</option>
+                <option>Glass vase</option>
+                <option>Crystal vase</option>
+                <option>Metal vase</option>
+                <option>Wooden vase</option>
+                <option>Plastic pots</option>
+                <option>Hanging pots</option>
+                <option>Self-watering Pots</option>
+                <option>Urn pots</option>
+                <option>Belly vase</option>
+                <option>Concrete Vase</option>
+                <option>Tabletop Vase</option>
+                <option>Glazed pots</option>
+                <option>Jute wrapped pots</option>
+            </select>
+
+            <p><b>Tables & Sofas</b></p>
+            <select>
+                <option>None</option>
+                <option>Henning end table</option>
+                <option>Minimalist end table</option>
+                <option>Wood end table</option>
+                <option>Laurel Accent table</option>
+                <option>Scandi-style end table</option>
+                <option>Round gold side table</option>
+                <option>Modern curved sofa</option>
+                <option>Stua libera armchair</option>
+                <option>Garden mira swivel chair</option>
+                <option>Furvclc Modern Sectional Sofa</option>
+                <option>Tweedy light armchair</option>
+                <option>Mid-century show wood chair</option>
+                <option>Modern velvet lounge chair</option>
+                <option>Grey upholstered sofa</option>
+                <option>Swoop arm sofa</option>
+            </select>
+
+            <p><b>Mirror</b></p>
+            <select>
+                <option>None</option>
+                <option>Standing Mirror</option>
+                <option>Wall Mounted full-length Mirror</option>
+                <option>Geometric Mirror</option>
+                <option>Sunburst Mirror</option>
+                <option>Art deco Mirror</option>
+                <option>Vintage Mirror</option>
+                <option>Frameless Mirror</option>
+                <option>Overmantle Mirror</option>
+                <option>Mirror Clusters</option>
+                <option>Mirror tiles</option>
+                <option>Mirror Art</option>
+                <option>Designer Mirror</option>
+                <option>Balcony Mirror</option>
+                <option>Convex Mirror</option>
+                <option>Swivel Mirror</option>
+            </select>
+
+            <p><b>Showpieces</b></p>
+            <select>
+                <option>None</option>
+                <option>Resin Romantic Boat Couple</option>
+                <option>Iron Leaf Decorative Design</option>
+                <option>Brass Sitting Deer</option>
+                <option>Deer Family Showpiece</option>
+                <option>African Tribal Women Art Piece</option>
+                <option>Chakra crystal tree</option>
+                <option>Leather lamp</option>
+                <option>Wood pebble table lamp</option>
+                <option>Modern classy happy owl resin</option>
+                <option>Crystals Wealth Orgone Pyramid</option>
+                <option>Smoke fountain</option>
+                <option>Idolcraft vintage car showpiece</option>
+                <option>Bastar tribal art dance</option>
+                <option>GOLDEN HUES Amethyst Sculpture Healing Tree</option>
+                <option>Mapping the realm</option>
+            </select>
+
+            <p><b>Photoframes</b></p>
+            <select>
+                <option>None</option>
+                <option>Traditional Wooden Frames</option>
+                <option>Metal Frames</option>
+                <option>Acrylic Frames</option>
+                <option>Collage Frames</option>
+                <option>Floating Frames</option>
+                <option>Digital frames</option>
+                <option>Shadow Box Frames</option>
+                <option>Tabletop frames</option>
+                <option>Wall frames</option>
+                <option>Ornate or Decorative Frames</option>
+                <option>Eco-friendly frames</option>
+                <option>Magnetic frames</option>
+                <option>Polaroid frames</option>
+                <option>Mirror frames</option>
+                <option>Photo Albums with Frames</option>
+            </select>
+
+            <h2>Payment Details:</h2>
+            <p><b>Select the mode of payment</b></p>
+            <input type="radio" name="payment" value="Cash on Delivery">Cash on Delivery<br><br><br>    
+            <input type="radio" name="payment" value="Debit/Credit Card">Debit/Credit Card<br><br>
+            <p><b>Debit/Credit Card Details:</b></p><br>
+                <p>Cardholder Name:</p>
+                <input type="text" name="cardholderName"><br>
+                <p>Card Number:</p>
+                <input type="text" name="cardNumber"><br>
+                <p>Expiry Date:</p>
+                <input type="text" name="expiryDate" placeholder="MM/YY"><br>
+                <p>CVV/CVC:</p>
+                <input type="text" name="cvv"><br>
+                <p>Billing Address:</p>
+                <input type="text" name="billingAddress"><br>
+                <p>Phone Number:</p>
+                <input type="text" name="phoneNumber"><br><br>
+            <input type="radio" name="payment" value="UPI, Paytm, GooglePay">UPI, Paytm, GooglePay<br><br>
+            <p><b>UPI Details:</b></p>
+                <p>UPI ID:</p>
+                <input type="text" name="upiId"><br>
+                <p>Phone Number:</p>
+                <input type="text" name="upiPhoneNumber"><br>
+                <p>OTP Verification:</p>
+                <input type="text" name="otpVerification" placeholder="Enter OTP"><br><br>
+
+            <h2>Extra Details:</h2>
+            <p>How do you want your delivery to be?</p>
+            <input type="radio" name="delivery" value="Same day">Same day<br>
+            <input type="radio" name="delivery" value="As per the provided date">As per the provided date<br>
+
+            <h2>Rate us:</h2>
+            <p>From 1-5:</p>
+            <input type="radio" name="rating" value="1">1<br>
+            <input type="radio" name="rating" value="2">2<br>
+            <input type="radio" name="rating" value="3">3<br>
+            <input type="radio" name="rating" value="4">4<br>
+            <input type="radio" name="rating" value="5">5<br>
+
+            <h2>Please share your valuable feedback with us!</h2>
+            <textarea rows="6" cols="60"></textarea>
+            <!--Submit Button -->
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Quick Links</p>
+        <div class="footer-links">
+            <a href="about_us.html">About Us</a>
+            <a href="ContactUs.html">What We Do</a>
+            <a href="ContactUs.html">FAQ Page</a>
+            <a href="ContactUs.html">Find our Store</a>
+        </div>
+    </footer>
+</body>
+</html>

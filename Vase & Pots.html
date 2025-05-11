@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vase and Pots</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #D6CC99;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo img {
+            height:auto;
+            width:auto;
+        }
+
+        nav {
+            background-color: #D6CC99;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .content h2 {
+            font-family: Cursive, serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .photo-cards {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            max-width: 95%;
+            margin: 0 auto;
+        }
+        
+        .photo-card {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            flex: 1 1 calc(20% - 10px); /* Adjusted width */
+            height: 400px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 70%;
+            border-bottom: 2px solid #eee;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-card:hover img {
+            transform: scale(1.05);
+        }
+
+        /*Shop Now Button Section Style*/
+        .shop-now-button {
+            margin: 40px 0; /* Adjust the top and bottom margin as needed */
+        }
+        .shop-now-button .button {
+            background-color: #D6CC99; /* Background color for the button */
+            color: #333; /* Text color */
+            padding: 10px 20px; /* Padding inside the button */
+            font-size: 1.5rem; /* Font size */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s ease; /* Transition effect */
+        }
+        .shop-now-button .button:hover {
+            background-color: #ccc; /* Change background color on hover */
+        }
+
+       /* Gallery Section Styles */
+        .gallery-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .gallery-section h2 {
+            font-family: Cursive, serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item img.hover-image {
+            opacity: 0;
+        }
+
+        .gallery-item:hover img.hover-image {
+            opacity: 1;
+        }
+
+        .gallery-item:hover img:not(.hover-image) {
+            opacity: 0;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #FDE5D4;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            margin: 5px;
+            padding: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://calla.qodeinteractive.com/wp-content/themes/calla/assets/img/logo_white.png" alt="Website Logo">
+        </div>
+        <hr>
+    </header>
+
+    <nav>
+        <a href="Main Webpage.html">Home</a>
+        <a href="category.html">Products</a>
+        <a href="about_us.html">About Us</a>
+        <a href="ContactUs.html">Contact</a>
+        <hr>
+    </nav>
+
+    <div class="content">
+        <h2>Vase & Pots</h2>
+
+        <!-- First row of photo cards -->
+        <div class="photo-cards">
+            <div class="photo-card">
+                <img src="https://i.pinimg.com/736x/e5/68/07/e5680761da6aa8794cea24dee88bab3a.jpg" alt="product 1">
+                <h4>Floral Patterned Vase</h4>
+                <p>₹15,000</p>
+            </div>
+            <div class="photo-card">
+                <img src="https://i.pinimg.com/736x/c7/3c/25/c73c2574e653930a9b186b67d8a4626d.jpg" alt="product 2">
+                <h4>Ceramic Vase</h4>
+                <p>₹10,000</p>
+            </div>
+            <div class="photo-card">
+                <img src="https://i.pinimg.com/236x/67/7a/0b/677a0bb5045f20fda9fad28ac851a153.jpg" alt="product 3">
+                <h4>Glass Vase</h4>
+                <p>₹25,000</p>
+            </div>
+            <div class="photo-card">
+                <img src="https://i.pinimg.com/1200x/a2/5b/99/a25b99658465c0318a99f4f662a12ad9.jpg" alt="product 4">
+                <h4>Crystal Vase</h4>
+                <p>₹45,000</p>
+            </div>
+            <div class="photo-card">
+                <img src="https://images.meesho.com/images/products/268187481/rqqu4_512.webp" alt="product 5">
+                <h4>Metal Vase</h4>
+                <p>₹20,000</p>
+            </div>
+        </div>
+    </div>
+    <!-- Second row of photo cards -->
+    <div class="photo-cards">
+        <div class="photo-card">
+            <img src="https://i.etsystatic.com/11075524/r/il/82ff9e/4389098767/il_570xN.4389098767_8z9y.jpg" alt="product 6">
+            <h4>Wooden Vase</h4>
+            <p>₹40,000</p>
+        </div>
+        <div class="photo-card">
+            <img src="https://i.pinimg.com/236x/d6/22/8c/d6228cb2513815a5c3791fff679d82e3.jpg" alt="product 7">
+            <h4>Plastic Pots</h4>
+            <p>₹10,000</p>
+        </div>
+        <div class="photo-card">
+            <img src="https://i.pinimg.com/564x/c8/b1/66/c8b166f17e602d1989d64097a766036a.jpg" alt="product 8">
+            <h4>Hanging Pots</h4>
+            <p>₹28,000</p>
+        </div>
+        <div class="photo-card">
+            <img src="https://i.pinimg.com/736x/8e/51/c4/8e51c4902f74e27e22c8ecba4a82574f.jpg" alt="product 9">
+            <h4>Self-watering Pots</h4>
+            <p>₹44,000</p>
+        </div>
+        <div class="photo-card">
+            <img src="https://i.pinimg.com/736x/ae/f3/f3/aef3f3e513d8f924bef5458eeaedd8bb.jpg" alt="product 10">
+            <h4>Urn Pots</h4>
+            <p>₹66,000</p>
+        </div>
+    </div>
+
+    <!-- Third row of photo cards -->
+    <div class="photo-cards">
+        <div class="photo-card">
+            <img src="https://image.made-in-china.com/2f0j00wFgVDoqnycki/Belly-Round-Lantern-Shape-Large-Decoration-Clear-Glass-Flower-Vase-of-Different-Size.webp" alt="product 11">
+            <h4>Belly Vase</h4>
+            <p>₹58,000</p>
+        </div>
+        <div class="photo-card">
+            <img src="https://i.pinimg.com/736x/a4/d8/43/a4d8436429c108408bbbfd0b575e54dc.jpg" alt="product 12">
+            <h4>Concrete Vase</h4>
+            <p>₹30,000</p>
+        </div>
+        <div class="photo-card">
+            <img src="https://i.pinimg.com/236x/dd/47/6a/dd476ad6a7ff3496ae26981133eef279.jpg" alt="product 13">
+            <h4>Tabletop Vase</h4>
+            <p>₹21,000</p>
+        </div>
+        <div class="photo-card">
+            <img src="https://i.pinimg.com/736x/a9/88/a2/a988a2bff9b8c29421a7cd4102ae3b40.jpg" alt="product 14">
+            <h4>Glazed Pots</h4>
+            <p>₹47,000</p>
+        </div>
+        <div class="photo-card">
+            <img src="https://i.pinimg.com/originals/10/8d/32/108d325dfa09178ade9a892abbd0855c.jpg" alt="product 15">
+            <h4>Jute-wrapped Pots</h4>
+            <p>₹31,000</p>
+        </div>
+    </div>
+
+    <!--Shop Now Button-->
+    <div style="text-align: center; margin: 20px 0;">
+        <a href="#shopnow" style="display: inline-block; background-color: #808080; color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-size: 1.5rem;">
+            <i class="fas fa-shopping-cart" style="margin-right: 8px;"></i> Shop Now
+        </a>
+    </div>
+
+
+
+    <div class="content">
+        <h2>Best Selling Products</h2>
+        <!-- Best selling products -->
+        <div class="photo-cards">
+            <div class="photo-card">
+                <img src="https://i.pinimg.com/originals/aa/15/b6/aa15b6cb2d209a2045e24b07e65ed2b7.jpg" alt="product 6">
+                <h4>Crackle Glass Vase</h4>
+            </div>
+            <div class="photo-card">
+                <img src="https://i.pinimg.com/736x/88/c1/96/88c19603639b256e00f54685ae09a730.jpg" alt="product 14">
+                <h4>Bamboo Planters</h4>
+            </div>
+            <div class="photo-card">
+                <img src="https://m.media-amazon.com/images/I/71fBGRSN61L._AC_UF894,1000_QL80_.jpg" alt="product 4">
+                <h4>Tall Floor Vase</h4>
+            </div>
+            <div class="photo-card">
+                <img src="https://i.pinimg.com/736x/2f/e0/8e/2fe08ec6aa23248a57c94de4339cb898.jpg" alt="product 9">
+                <h4>Marble Pots</h4>
+            </div>
+            <div class="photo-card">
+                <img src="https://i.pinimg.com/736x/6f/92/fe/6f92fe21f9ecc9014631a40a2a7c34d2.jpg" alt="product 7">
+                <h4>Terrarium Pots</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <!-- Row 1: Gallery Items 1 to 4 -->
+        <div class="gallery-item">
+            <img src="https://www.yuvaflowers.com/cdn/shop/files/tied-ribbons-resin-romantic-boat-couple-showpiece-statue-for-home-decor-living-room-bedroom-decoration-items-gift-to-wife-husband-boyfriend-girlfriend-multi-colour-visit-the-tied-ribb.jpg?v=1711902330" alt="Gallery Image 1">
+            <img src="https://diybaazar.com/publicuploads/seller/products/plrk-metal-iron-ganesha-t-light-multicolour-stone-candle-holder-home-decorative-itemshome-decor-items-for-living-roompooja-room-diwali-gift-items-2551-3502-1_diybaazar63347b3fb83a7.jpg" alt="Gallery Image 1 Hover" class="hover-image">
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE4nZcI91-hj64UN3FVf2h6hDn9U_xUfGHAA&s" alt="Gallery Image 2">
+            <img src="https://m.media-amazon.com/images/I/51wriIzYwWL._AC_.jpg" alt="Gallery Image 2 Hover" class="hover-image">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.shopify.com/s/files/1/0030/9759/1872/files/today_2_480x480.png?v=1680262150" alt="Gallery Image 3">
+            <img src="https://img.joomcdn.net/1bd4ab4d5335d4c4806b8c821321c7204dd03520_original.jpeg" alt="Gallery Image 3 Hover" class="hover-image">
+        </div>
+        <div class="gallery-item">
+            <img src="https://zugunu.com/wp-content/uploads/2021/09/In-Circle-Antique-Peacock-Wall-Decor-1.jpg" alt="Gallery Image 4">
+            <img src="https://m.media-amazon.com/images/I/61M5T5LbSjL._AC_UF1000,1000_QL80_.jpg" alt="Gallery Image 4 Hover" class="hover-image">
+        </div>
+        <!-- Row 2: Gallery Items 5 to 8 -->
+        <div class="gallery-item">
+            <img src="https://m.media-amazon.com/images/I/617JFJOe8jL._AC_UF1000,1000_QL80_.jpg" alt="Gallery Image 5">
+            <img src="https://images.meesho.com/images/products/423915385/lqvt0_512.webp" alt="Gallery Image 5 Hover" class="hover-image">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.jiomart.com/images/product/original/rvh6wc3fzw/mapperz-star-led-serial-string-lights-for-home-decore-2-5-meter-copper-wire-12-stars-138-led-lights-for-birthday-festive-decore-white-product-images-orvh6wc3fzw-p605688555-0-202310212124.jpg?im=Resize=(1000,1000)" alt="Gallery Image 6">
+            <img src="https://m.media-amazon.com/images/I/619nfGytrJL._AC_UF1000,1000_QL80_.jpg" alt="Gallery Image 6 Hover" class="hover-image">
+        </div>
+        <div class="gallery-item">
+            <img src="https://area44.in/cdn/shop/products/tablelampmoon02.png?v=1604153014" alt="Gallery Image 7">
+            <img src="https://www.nerolac.com/sites/default/files/2024-09/Diwali-Home-Decoration-Ideas_H3.webp" alt="Gallery Image 7 Hover" class="hover-image">
+        </div>
+        <div class="gallery-item">
+            <img src="https://craftomanic.com/wp-content/uploads/2023/12/f698df44ead7ceb154fec0bb26ac857d-1.jpg" alt="Gallery Image 8">
+            <img src="https://www.bigsmall.in/cdn/shop/files/webp.webp?v=1698326541&width=2160" alt="Gallery Image 8 Hover" class="hover-image">
+        </div>
+    </div>
+    </div>
+    <footer>
+        <h3>Quick Links</h3>
+        <div class="footer-links">
+            <a href="about_us.html">About Us</a>
+            <a href="ContactUs.html">What We Do</a>
+            <a href="ContactUs.html">FAQ Page</a>
+            <a href="ContactUs.html">Find our Store</a>
+        </div>
+    </footer>
+</body>
+</html>
